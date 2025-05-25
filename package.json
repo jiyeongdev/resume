@@ -18,7 +18,7 @@
     "lint": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && eslint \"component/**/*\" \"pages/**/*\" \"payload/**/*\" \"*.ts\" --fix'",
     "typedoc": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && typedoc --excludeExternals'"
   },
-  "homepage": "https://minha9012.github.io/resume-nextjs",
+  "homepage": "https://jiyeongdev.github.io/resume-nextjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uyu423/resume-nextjs.git"
