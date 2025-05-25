@@ -10,7 +10,7 @@ const education: IEducation.Payload = {
       subTitle: '컴퓨정보공학부 졸업',
       startedAt: '2016-03',
       endedAt: '2023-02',
-    }
+    },
   ],
 };
 

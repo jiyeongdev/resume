@@ -6,17 +6,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env DEBUG=yosume:* next",
-    "build": "cross-env next build",
-    "prebuild": "npm install && npm run lint",
-    "start": "cross-env next start",
-    "export:with-typedoc": "npm run export && npm run typedoc",
-    "export": "cross-env NODE_ENV=production next export --outdir docs/",
-    "preexport": "npm run clean && npm run build",
-    "postexport": "node shellwork.js",
-    "clean": "npx rimraf docs .next",
-    "lint": "eslint \"component/**/*\" \"pages/**/*\" \"payload/**/*\" \"*.ts\" --fix",
-    "typedoc": "typedoc --excludeExternals"
+    "dev": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && cross-env DEBUG=yosume:* next'",
+    "build": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && cross-env next build'",
+    "prebuild": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && npm install && npm run lint'",
+    "start": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && cross-env next start'",
+    "export:with-typedoc": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && npm run export && npm run typedoc'",
+    "export": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && cross-env NODE_ENV=production next export --outdir docs/'",
+    "preexport": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && npm run clean && npm run build'",
+    "postexport": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && node shellwork.js'",
+    "clean": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && npx rimraf docs .next'",
+    "lint": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && eslint \"component/**/*\" \"pages/**/*\" \"payload/**/*\" \"*.ts\" --fix'",
+    "typedoc": "bash -c 'source ~/.nvm/nvm.sh && nvm use $(cat .nvmrc) && typedoc --excludeExternals'"
   },
   "homepage": "https://minha9012.github.io/resume-nextjs",
   "repository": {

@@ -9,8 +9,7 @@ const presentation: IPresentation.Payload = {
       subTitle: '한국산업인력공단 (22203070643N)',
       at: '2022-11',
       descriptions: [],
-    }
-   
+    },
   ],
 };
 

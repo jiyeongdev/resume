@@ -64,7 +64,6 @@ const frontendDevelopment: ISkill.Skill = {
   ],
 };
 
-
 const infrastructureCloud: ISkill.Skill = {
   category: 'Infrastructure & Cloud',
   items: [

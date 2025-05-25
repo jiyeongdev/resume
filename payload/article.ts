@@ -8,7 +8,6 @@ const article: IArticle.Payload = {
       content: '',
       href: '',
     },
-   
   ],
 };
 

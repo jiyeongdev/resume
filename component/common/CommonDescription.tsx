@@ -70,7 +70,11 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
       return (
         <li style={getFontWeight(weight)}>
           <HrefTargetBlank url={href} text={content} /> <img src={postImage} alt={postImage} />
-          {contribution && <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">{contribution}</Badge>}
+          {contribution && (
+            <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">
+              {contribution}
+            </Badge>
+          )}
         </li>
       );
     }
@@ -78,7 +82,11 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
       return (
         <li style={getFontWeight(weight)}>
           <HrefTargetBlank url={href} text={content} />
-          {contribution && <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">{contribution}</Badge>}
+          {contribution && (
+            <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">
+              {contribution}
+            </Badge>
+          )}
         </li>
       );
     }
@@ -87,7 +95,11 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
         <li style={getFontWeight(weight)}>
           {content} <HrefTargetBlank url={postHref} text={postHref} />{' '}
           <img src={postImage} alt={postImage} />
-          {contribution && <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">{contribution}</Badge>}
+          {contribution && (
+            <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">
+              {contribution}
+            </Badge>
+          )}
         </li>
       );
     }
@@ -95,7 +107,11 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
       return (
         <li style={getFontWeight(weight)}>
           {content} <HrefTargetBlank url={postHref} text={postHref} />
-          {contribution && <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">{contribution}</Badge>}
+          {contribution && (
+            <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">
+              {contribution}
+            </Badge>
+          )}
         </li>
       );
     }
@@ -103,7 +119,11 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
       return (
         <li style={getFontWeight(weight)}>
           {content} <img src={postImage} alt={postImage} />
-          {contribution && <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">{contribution}</Badge>}
+          {contribution && (
+            <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">
+              {contribution}
+            </Badge>
+          )}
         </li>
       );
     }
@@ -112,7 +132,11 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
         <meta name="format-detection" content="telephone=no" />
         <li style={getFontWeight(weight)}>
           {content}
-          {contribution && <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">{contribution}</Badge>}
+          {contribution && (
+            <Badge style={Style.skillKeywordBadge} color="secondary" className="ml-2">
+              {contribution}
+            </Badge>
+          )}
         </li>
       </>
     );

@@ -13,7 +13,7 @@ export const _global: IGlobal.Payload = {
     openGraph: {
       title,
       description,
-  
+
       type: 'profile',
       profile: {
         firstName: 'Jiyeong',
