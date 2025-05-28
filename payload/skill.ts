@@ -1,7 +1,7 @@
 import { ISkill } from '../component/skill/ISkill';
 
 const backendDevelopment: ISkill.Skill = {
-  category: 'Backend Development',
+  category: 'Backend Languages',
   items: [
     {
       title: 'Java',
@@ -17,12 +17,12 @@ const backendDevelopment: ISkill.Skill = {
       title: 'PHP',
     },
     {
-      title: 'Node.js',
+      title: 'javascript',
     },
   ],
 };
 
-const Frameworks: ISkill.Skill = {
+const frameworks: ISkill.Skill = {
   category: 'Frameworks & Libraries',
   items: [
     {
@@ -32,13 +32,20 @@ const Frameworks: ISkill.Skill = {
       title: 'JPA',
     },
     {
-      title: 'Echo',
+      title: 'Echo (Go)',
+    },
+    {
+      title: 'Python',
+    },
+    {
+      title: 'Node.js',
     },
     {
       title: 'Express.js',
     },
+    
     {
-      title: 'Codeigniter',
+      title: 'CodeIgniter',
     },
     {
       title: 'Laravel',
@@ -47,19 +54,16 @@ const Frameworks: ISkill.Skill = {
 };
 
 const frontendDevelopment: ISkill.Skill = {
-  category: 'Frontend Development',
+  category: 'Frontend Languages',
   items: [
     {
       title: 'HTML5',
     },
     {
-      title: 'CSS3(SCSS)',
+      title: 'JavaScript (ES6)',
     },
     {
-      title: 'JavaScript(ES6)',
-    },
-    {
-      title: 'Sass',
+      title: 'CSS3 (SCSS)',
     },
   ],
 };
@@ -68,7 +72,10 @@ const infrastructureCloud: ISkill.Skill = {
   category: 'Infrastructure & Cloud',
   items: [
     {
-      title: 'AWS',
+      title: 'Linux',
+    },
+    {
+      title: 'Docker',
     },
     {
       title: 'AWS EC2',
@@ -77,22 +84,32 @@ const infrastructureCloud: ISkill.Skill = {
       title: 'AWS S3',
     },
     {
+      title: 'AWS ECS',
+    },
+    {
+      title: 'AWS ECR',
+    },
+    {
+      title: 'AWS Lambda',
+    },
+    {
+      title: 'AWS SQS',
+    },
+    {
+      title: 'AWS SNS',
+    },
+
+    {
+      title: 'AWS OpenSearch + Kibana',
+    },
+    {
       title: 'AWS Route53',
-    },
-    {
-      title: 'Docker',
-    },
-    {
-      title: 'Linux',
     },
     {
       title: 'Nginx',
     },
     {
-      title: 'Lua(Nginx)',
-    },
-    {
-      title: 'Openresty',
+      title: 'OpenResty (Nginx + Lua)',
     },
     {
       title: 'Apache',
@@ -103,9 +120,7 @@ const infrastructureCloud: ISkill.Skill = {
 const databaseCaching: ISkill.Skill = {
   category: 'Database & Caching',
   items: [
-    {
-      title: 'RDBMS',
-    },
+  
     {
       title: 'MySQL',
     },
@@ -131,35 +146,36 @@ const dataAnalysis: ISkill.Skill = {
       title: 'BigQuery',
     },
     {
-      title: 'Redash Dashboard',
-    },
+      title: 'Redash',
+    }, 
+    {
+    title: 'Jupyter Notebook',
+  }
   ],
 };
 
 const devOpsMonitoring: ISkill.Skill = {
-  category: 'DevOps & Monitoring',
+  category: 'Monitoring',
+  items: [
+    {
+      title: 'DataDog',
+    },
+    { 
+      title :'WhaTap'
+    }
+  ],
+};
+
+const ciCdTools: ISkill.Skill = {
+  category: 'CI/CD Tools',  
   items: [
     {
       title: 'Jenkins',
     },
     {
-      title: 'Linux shell',
+      title: 'GitHub Actions ',
     },
-    {
-      title: 'Datadog',
-    },
-    {
-      title: 'OpenSearch',
-    },
-  ],
-};
-
-const messageQueue: ISkill.Skill = {
-  category: 'Message Queue & Event Streaming',
-  items: [
-    {
-      title: 'Kafka',
-    },
+    
   ],
 };
 
@@ -167,10 +183,10 @@ const toolsCollaboration: ISkill.Skill = {
   category: 'Tools & Collaboration',
   items: [
     {
-      title: 'WebStorm',
+      title : 'JetBrains IDEs',
     },
     {
-      title: 'PhpStorm',
+      title : 'Medis',
     },
     {
       title: 'DataGrip',
@@ -193,21 +209,23 @@ const toolsCollaboration: ISkill.Skill = {
     {
       title: 'Confluence',
     },
-    {
-      title: 'Slack',
-    },
-    {
-      title: 'Notion',
-    },
+    
   ],
+};
+
+const devOps: ISkill.Skill = {
+  category: 'DevOps',
+  items: [
+    { title: 'Linux Shell' },
+    { title: 'Terraform (AWS IaC 구성)' }, 
+    { title: 'Bash Scripting (배포 자동화)'  },
+    { title: 'Crontab' },
+  ]
 };
 
 const communityLearning: ISkill.Skill = {
   category: 'Community & Learning',
   items: [
-    {
-      title: 'DevOps',
-    },
     {
       title: 'Medium',
     },
@@ -221,15 +239,16 @@ const skill: ISkill.Payload = {
   disable: false,
   skills: [
     backendDevelopment,
-    Frameworks,
+    frameworks,
     frontendDevelopment,
     infrastructureCloud,
     databaseCaching,
+    devOps,
     dataAnalysis,
     devOpsMonitoring,
-    messageQueue,
+    ciCdTools,
     toolsCollaboration,
-    communityLearning,
+    communityLearning, 
   ],
   // tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };

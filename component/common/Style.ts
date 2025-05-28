@@ -9,7 +9,8 @@ type TStyleKey =
   | 'profileImg'
   | 'footerCover'
   | 'footer'
-  | 'skillKeywordBadge';
+  | 'skillKeywordBadge'
+  | 'highlightBadge';
 
 export const Style: Record<TStyleKey, CSSProperties> = {
   blue: {
@@ -51,5 +52,12 @@ export const Style: Record<TStyleKey, CSSProperties> = {
 
   skillKeywordBadge: {
     fontWeight: 400,
+  },
+
+  highlightBadge: {
+    fontWeight: 500,
+    backgroundColor: '#4a90e2',
+    color: 'white',
+    fontSize: '0.9em',
   },
 };
