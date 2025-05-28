@@ -2,7 +2,6 @@ import { DateTime } from 'luxon';
 import { PropsWithChildren } from 'react';
 import { Badge, Col, Row } from 'reactstrap';
 import { Style } from '../common/Style';
-import Util from '../common/Util';
 import { IExperience } from './IExperience';
 
 export default function ExperienceRow({

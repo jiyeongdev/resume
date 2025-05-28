@@ -43,7 +43,7 @@ const frameworks: ISkill.Skill = {
     {
       title: 'Express.js',
     },
-    
+
     {
       title: 'CodeIgniter',
     },
@@ -120,7 +120,6 @@ const infrastructureCloud: ISkill.Skill = {
 const databaseCaching: ISkill.Skill = {
   category: 'Database & Caching',
   items: [
-  
     {
       title: 'MySQL',
     },
@@ -147,10 +146,10 @@ const dataAnalysis: ISkill.Skill = {
     },
     {
       title: 'Redash',
-    }, 
+    },
     {
-    title: 'Jupyter Notebook',
-  }
+      title: 'Jupyter Notebook',
+    },
   ],
 };
 
@@ -160,14 +159,14 @@ const devOpsMonitoring: ISkill.Skill = {
     {
       title: 'DataDog',
     },
-    { 
-      title :'WhaTap'
-    }
+    {
+      title: 'WhaTap',
+    },
   ],
 };
 
 const ciCdTools: ISkill.Skill = {
-  category: 'CI/CD Tools',  
+  category: 'CI/CD Tools',
   items: [
     {
       title: 'Jenkins',
@@ -175,7 +174,6 @@ const ciCdTools: ISkill.Skill = {
     {
       title: 'GitHub Actions ',
     },
-    
   ],
 };
 
@@ -183,10 +181,10 @@ const toolsCollaboration: ISkill.Skill = {
   category: 'Tools & Collaboration',
   items: [
     {
-      title : 'JetBrains IDEs',
+      title: 'JetBrains IDEs',
     },
     {
-      title : 'Medis',
+      title: 'Medis',
     },
     {
       title: 'DataGrip',
@@ -209,7 +207,6 @@ const toolsCollaboration: ISkill.Skill = {
     {
       title: 'Confluence',
     },
-    
   ],
 };
 
@@ -217,10 +214,10 @@ const devOps: ISkill.Skill = {
   category: 'DevOps',
   items: [
     { title: 'Linux Shell' },
-    { title: 'Terraform (AWS IaC 구성)' }, 
-    { title: 'Bash Scripting (배포 자동화)'  },
+    { title: 'Terraform (AWS IaC 구성)' },
+    { title: 'Bash Scripting (배포 자동화)' },
     { title: 'Crontab' },
-  ]
+  ],
 };
 
 const communityLearning: ISkill.Skill = {
@@ -248,7 +245,7 @@ const skill: ISkill.Payload = {
     devOpsMonitoring,
     ciCdTools,
     toolsCollaboration,
-    communityLearning, 
+    communityLearning,
   ],
   // tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
