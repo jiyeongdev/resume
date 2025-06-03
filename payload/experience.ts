@@ -9,7 +9,7 @@ const experience: IExperience.Payload = {
       title: COMPANY.DIRECT_CLOUD_LAB,
       position: 'Backend Developer',
       startedAt: '2024-02',
-      // endedAt: '2024-11',
+      endedAt: '2024-11',
       descriptions: [
         '1,500여개의 고객사와 40만 명의 유저를 지원하는 고성능 시스템 운영 및 유지보수',
         '권한 관리 시스템 개선을 주도하여 **API 처리 시간을 98% 단축**하고 사용자 경험 향상에 기여',
