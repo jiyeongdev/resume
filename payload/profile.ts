@@ -20,16 +20,16 @@ const profile: IProfile.Payload = {
       icon: faEnvelope,
     },
     {
-      title: 'Please contact me by email',
+      title: '010-5332-2273',
       icon: faPhone,
       badge: true,
     },
     {
-      link: '',
+      link: 'https://github.com/jiyeongdev',
       icon: faGithub,
     },
     {
-      link: '',
+      link: 'https://velog.io/@jiyeongdev/posts',
       icon: faPen,
     },
   ],
