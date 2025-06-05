@@ -1,14 +1,14 @@
 export const COMPANY = {
-  DIRECT_CLOUD_LAB: '다이렉트클라우드랩',
-  ING_STORY: '아이엔지스토리',
-  DIRECT_CLOUD_LAB_ENG: 'DirectCloudLab', // 'DirectCloudLab',
-  ING_STORY_ENG: 'IngStory', // 'IngStory',
+  DIRECT_CLOUD_LAB: 'DCL',
+  ING_STORY: '아이엔지',
+  DIRECT_CLOUD_LAB_ENG: 'DCL', // 'DirectCloudLab',
+  ING_STORY_ENG: '아이엔지', // 'IngStory',
 } as const;
 
 export type CompanyType = typeof COMPANY[keyof typeof COMPANY];
 
 export const EDUCATION = {
-  UNIVERSITY: '가톨릭대학교',
+  UNIVERSITY: '가대',
 } as const;
 
 export type EducationType = typeof EDUCATION[keyof typeof EDUCATION];
