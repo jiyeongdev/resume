@@ -5,6 +5,48 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
+      title: 'AI 이미지 기반 냉장고 재료 관리 및 레시피 공유 서비스',
+      startedAt: '2025-03',
+      endedAt: '2025-06',
+      where: '개인 프로젝트',
+      descriptions: [
+        {
+          content: 'Spring Boot 기반의 냉장고 재료 관리 및 레시피 공유 서비스',
+          contribution: '100% 기여',
+          descriptions: [
+            {
+              content: 'Spring Boot 3.x, Java 21 기반의 RESTful API 서버 설계 및 구현',
+            },
+            {
+              content:
+                'Spring Security + OAuth2를 활용한 구글 소셜 로그인 및 JWT 기반 인증 시스템 구축',
+            },
+            {
+              content:
+                '계층형 테이블 구조(대/중/소분류)를 활용한 식재료 카테고리 모델링 및 JPA/Hibernate로 구현',
+            },
+            {
+              content: 'QueryDSL 도입으로 JPA보다 유연하게 동적 쿼리 반영',
+            },
+            {
+              content:
+                'Python AI 이미지 생성 서버 구축 - Stable Diffusion v1.5(runwayml) 모델 활용',
+            },
+            {
+              content: 'Groq API(Llama 3.3 70B)를 활용한 한→영 번역 최적화 및 프롬프트 엔지니어링',
+            },
+            {
+              content:
+                'Pandas, NumPy를 활용한 14만건 식재료 데이터 전처리 및 1만건 고유 데이터셋 구축',
+            },
+            {
+              content: 'OpenCV, Pillow를 활용한 이미지 후처리 및 품질 검증 자동화',
+            },
+          ],
+        },
+      ],
+    },
+    {
       title: '권한체크 로직 전면 개선',
       startedAt: '2024-06',
       endedAt: '2024-11',
@@ -150,19 +192,16 @@ const project: IProject.Payload = {
       where: COMPANY.ING_STORY_ENG,
       descriptions: [
         {
-          content: 'WAS 구조의 인프라 구축',
-        },
-        {
-          content: 'OpenResty와 Lua를 활용한 고성능 웹서버 구축 및 Redis 연동',
-        },
-        {
-          content: '프록시 서버 구축',
-        },
-        {
-          content: '외부 업체의 다이나믹 QR 결제 API gateway 구축',
-        },
-        {
-          content: 'Jenkins 기반의 CI/CD 파이프라인 구축 및 배포 자동화 script 작성',
+          content: 'WAS 구조의 인프라 구축 및 운영',
+          contribution: '100% 기여',
+          descriptions: [
+            {
+              content: 'OpenResty와 Lua를 활용한 고성능 웹서버 구축 및 Redis 연동',
+            },
+            {
+              content: '프록시 서버 및 외부 업체의 다이나믹 QR 결제 API gateway 구축',
+            },
+          ],
         },
       ],
     },

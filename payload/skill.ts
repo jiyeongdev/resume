@@ -90,9 +90,6 @@ const infrastructureCloud: ISkill.Skill = {
       title: 'AWS ECR',
     },
     {
-      title: 'AWS Lambda',
-    },
-    {
       title: 'AWS SQS',
     },
     {
