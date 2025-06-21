@@ -1,4 +1,4 @@
-import { faEnvelope, faPen, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPen, faPhone, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import { faBell } from '@fortawesome/free-regular-svg-icons';
@@ -27,6 +27,10 @@ const profile: IProfile.Payload = {
     {
       link: 'https://github.com/jiyeongdev',
       icon: faGithub,
+    },
+    {
+      link: 'https://jiyeongs-workspace.notion.site/209d4268cb5580a19820f76aa0f8a497',
+      icon: faFileAlt,
     },
     {
       link: 'https://velog.io/@jiyeongdev/posts',
