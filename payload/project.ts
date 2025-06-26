@@ -65,6 +65,10 @@ const project: IProject.Payload = {
                 {
                   content: 'Docker 컨테이너화 및 AWS EC2 기반의 ECS 환경에 배포 및 운영',
                 },
+                {
+                  content:
+                    'Terraform을 활용한 서버 관리 자동화 - ECS 스케일링 스케줄러, S3 접근 모니터링, CloudTrail 실시간 추적 구현',
+                },
                 // {
                 //   content: 'HTTPS(SSL 인증서)를 적용한 보안 통신 환경 구성',
                 // },

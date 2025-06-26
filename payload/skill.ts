@@ -207,7 +207,7 @@ const devOps: ISkill.Skill = {
   category: 'DevOps',
   items: [
     { title: 'Linux Shell' },
-    { title: 'Terraform (AWS IaC 구성)' },
+    { title: 'Terraform (IaC 툴)' },
     { title: 'Bash Scripting (배포 자동화)' },
     { title: 'Crontab' },
   ],
