@@ -14,6 +14,7 @@ export declare namespace IRow {
     subTitle?: string;
     descriptions?: Description[];
     contribution?: string;
+    notionLink?: string;
   }
 
   /**

@@ -9,6 +9,7 @@ const project: IProject.Payload = {
       startedAt: '2025-03',
       endedAt: '2025-06',
       where: '개인 프로젝트',
+      notionLink: 'https://jiyeongs-workspace.notion.site/AI-209d4268cb5581208e69dd470172bf13',
       descriptions: [
         {
           content: '냉장고 재료 관리 및 레시피 공유 서비스',
@@ -71,7 +72,7 @@ const project: IProject.Payload = {
                 //   content: 'API 서버 인프라를 E2E로 직접 설계·구축 및 운영',
                 // },
                 {
-                  content: '서비스 전체 구조도 (자세한 설명은 포트폴리오 참조)',
+                  content: '서비스 전체 구조도',
                   contribution: '100% 인프라 구축',
                   href:
                     'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/fridgePal_Diagram.png',
@@ -88,6 +89,7 @@ const project: IProject.Payload = {
       startedAt: '2024-06',
       endedAt: '2024-11',
       where: COMPANY.DIRECT_CLOUD_LAB_ENG,
+      notionLink: 'https://jiyeongs-workspace.notion.site/209d4268cb5581eead1dcf118038f7d2',
       descriptions: [
         {
           content: '권한 체크 로직 개선 - 처리 시간 98% 단축 (평균 1분~ 최대 5분 대 → 1초 대)',
@@ -102,7 +104,7 @@ const project: IProject.Payload = {
         },
 
         {
-          content: '최적화 전후 시퀀스 다이어그램 비교 (자세한 설명은 포트폴리오 참조)',
+          content: '최적화 전후 시퀀스 다이어그램',
           href:
             'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/DCL_authority.png',
         },
@@ -114,6 +116,7 @@ const project: IProject.Payload = {
       startedAt: '2023-01',
       endedAt: '2023-07',
       where: COMPANY.ING_STORY_ENG,
+      notionLink: 'https://jiyeongs-workspace.notion.site/209d4268cb558130a00de3b67e7c66c5',
       descriptions: [
         {
           content: '이용권과 좌석배치도 SaaS 구조 설계 및 개선 담당',
@@ -128,8 +131,7 @@ const project: IProject.Payload = {
             'WebSocket 폴링 방식의 서버 부하 문제를 Redis Pub/Sub 이벤트 기반 아키텍처로 전환하여 실시간성 개선',
         },
         {
-          content:
-            'Redis pub/sub 실시간 좌석상태 동기화 시스템 구성도 (자세한 설명은 포트폴리오 참조)',
+          content: '실시간 좌석상태 동기화 구성도',
           contribution: '100% 인프라 구축',
           href:
             'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/ing_redis-pub-sub.png',
@@ -141,6 +143,7 @@ const project: IProject.Payload = {
       startedAt: '2023-05',
       endedAt: '2023-07',
       where: COMPANY.ING_STORY_ENG,
+      notionLink: 'https://jiyeongs-workspace.notion.site/209d4268cb5581f99154ffed33055a6b',
       descriptions: [
         {
           content: 'Google Apps Script를 활용한 Excel 송출 데이터 자동화 적용',
@@ -152,8 +155,7 @@ const project: IProject.Payload = {
           content: 'Redash Query를 활용하여 데이터 시각화하고 타부서와 공유',
         },
         {
-          content:
-            '키오스크 실시간 광고 송출 및 데이터 수집 시스템 구성도 (자세한 설명은 포트폴리오 참조)',
+          content: '광고 송출 자동화 구조도',
           href:
             'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/ing_advertise.png',
         },
@@ -164,6 +166,7 @@ const project: IProject.Payload = {
       startedAt: '2023-01',
       endedAt: '2023-05',
       where: COMPANY.ING_STORY_ENG,
+      notionLink: 'https://jiyeongs-workspace.notion.site/URL-209d4268cb55813ba6dfd65bb4af6ea5',
       descriptions: [
         {
           content:
@@ -196,7 +199,7 @@ const project: IProject.Payload = {
               ],
             },
             {
-              content: '단축URL 시스템 구성도 (자세한 설명은 포트폴리오 참조)',
+              content: '단축URL 시스템 구성도',
               contribution: '100% 인프라 구축',
               href:
                 'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/ing_shortenURL.png',
@@ -259,6 +262,7 @@ const project: IProject.Payload = {
       startedAt: '2022-06',
       endedAt: '2022-08',
       where: COMPANY.ING_STORY_ENG,
+      notionLink: 'https://jiyeongs-workspace.notion.site/CI-CD-209d4268cb5581cca52cd5f351e70f0f',
       descriptions: [
         {
           content: 'Jenkins Pipeline을 활용한 빌드, 테스트, 배포 파이프라인 구축',
@@ -273,7 +277,7 @@ const project: IProject.Payload = {
           content: '롤백 스크립트 작성 및 배포 이력 관리',
         },
         {
-          content: 'CI/CD 구성도 (자세한 설명은 포트폴리오 참조)',
+          content: 'CI/CD 구성도',
           contribution: '100% 인프라 구축',
           href:
             'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/ing_jenkins_CICD.png',
@@ -335,6 +339,7 @@ const project: IProject.Payload = {
       where: '4명 팀원 중 팀장 (Android/IOS/WEB)',
       startedAt: '2020-10',
       endedAt: '2021-10',
+      notionLink: 'https://jiyeongs-workspace.notion.site/209d4268cb558135a349ef8f42adaee5',
       descriptions: [
         {
           content: '[서비스 설명]',

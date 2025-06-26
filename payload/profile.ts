@@ -25,14 +25,17 @@ const profile: IProfile.Payload = {
       badge: true,
     },
     {
+      title: 'Github',
       link: 'https://github.com/jiyeongdev',
       icon: faGithub,
     },
     {
+      title: 'Notion 포트폴리오',
       link: 'https://jiyeongs-workspace.notion.site/209d4268cb5580a19820f76aa0f8a497',
       icon: faFileAlt,
     },
     {
+      title: '기술 Blog',
       link: 'https://velog.io/@jiyeongdev/posts',
       icon: faPen,
     },

@@ -47,5 +47,7 @@ export declare namespace IProject {
      * ### 프로젝트 기여도
      */
     contribution?: string;
+
+    notionLink?: string;
   }
 }

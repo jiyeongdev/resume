@@ -93,10 +93,6 @@ const infrastructureCloud: ISkill.Skill = {
       title: 'AWS SQS',
     },
     {
-      title: 'AWS SNS',
-    },
-
-    {
       title: 'AWS OpenSearch + Kibana',
     },
     {
