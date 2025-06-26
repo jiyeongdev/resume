@@ -53,20 +53,20 @@ const frameworks: ISkill.Skill = {
   ],
 };
 
-const frontendDevelopment: ISkill.Skill = {
-  category: 'Frontend Languages',
-  items: [
-    {
-      title: 'HTML5',
-    },
-    {
-      title: 'JavaScript (ES6)',
-    },
-    {
-      title: 'CSS3 (SCSS)',
-    },
-  ],
-};
+// const frontendDevelopment: ISkill.Skill = {
+//   category: 'Frontend Languages',
+//   items: [
+//     {
+//       title: 'HTML5',
+//     },
+//     {
+//       title: 'JavaScript (ES6)',
+//     },
+//     {
+//       title: 'CSS3 (SCSS)',
+//     },
+//   ],
+// };
 
 const infrastructureCloud: ISkill.Skill = {
   category: 'Infrastructure & Cloud',
@@ -217,24 +217,24 @@ const devOps: ISkill.Skill = {
   ],
 };
 
-const communityLearning: ISkill.Skill = {
-  category: 'Community & Learning',
-  items: [
-    {
-      title: 'Medium',
-    },
-    {
-      title: 'Geeknews',
-    },
-  ],
-};
+// const communityLearning: ISkill.Skill = {
+//   category: 'Community & Learning',
+//   items: [
+//     {
+//       title: 'Medium',
+//     },
+//     {
+//       title: 'Geeknews',
+//     },
+//   ],
+// };
 
 const skill: ISkill.Payload = {
   disable: false,
   skills: [
     backendDevelopment,
     frameworks,
-    frontendDevelopment,
+    // frontendDevelopment,
     infrastructureCloud,
     databaseCaching,
     devOps,
@@ -242,7 +242,7 @@ const skill: ISkill.Payload = {
     devOpsMonitoring,
     ciCdTools,
     toolsCollaboration,
-    communityLearning,
+    // communityLearning,
   ],
   // tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
