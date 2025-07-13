@@ -84,16 +84,13 @@ const infrastructureCloud: ISkill.Skill = {
       title: 'AWS S3',
     },
     {
-      title: 'AWS ECS',
-    },
-    {
-      title: 'AWS ECR',
+      title: 'AWS ECR/ECS',
     },
     {
       title: 'AWS SQS',
     },
     {
-      title: 'AWS OpenSearch + Kibana',
+      title: 'AWS OpenSearch',
     },
     {
       title: 'AWS Route53',

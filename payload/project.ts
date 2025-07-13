@@ -5,6 +5,107 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
+      title: '실시간 대기열 기반 콘서트 예매 시스템',
+      startedAt: '2025-06',
+      endedAt: '2025-07',
+      where: '개인 프로젝트',
+      descriptions: [
+        {
+          content: '대용량 트래픽 환경에서 공정한 예매가 가능한 실시간 콘서트 예매 시스템',
+          contribution: '백엔드/인프라 100% 기여',
+          descriptions: [
+            {
+              content: '[동시성 제어 및 실시간 처리]',
+              descriptions: [
+                {
+                  content:
+                    'Redis MULTI/EXEC 트랜잭션 + Spring @Transactional 조합으로 좌석 점유/해제/예매 확정의 원자적 처리 구현',
+                },
+                { content: 'Redis ZSet + RabbitMQ로 대기열 순차 입장 처리 및 공정성 보장' },
+                {
+                  content:
+                    'WebSocket(STOMP) + Redis Pub/Sub으로 실시간 좌석 상태 브로드캐스트 및 동기화 구현',
+                },
+              ],
+            },
+            {
+              content: '[데이터 정합성 및 자동화]',
+              descriptions: [
+                {
+                  content:
+                    'Redis Key Events 리스너(notify-keyspace-events: Ex)로 TTL 만료 시 자동 처리 및 데이터 정합성 보장',
+                },
+                {
+                  content:
+                    'Spring @Scheduled(30초마다)로 큐 입장 처리 스케줄러 구현, 예매 오픈 자동화',
+                },
+                {
+                  content:
+                    'Redis TTL + DB 동기화로 상태별 다른 TTL 설정(대기열 10분, 좌석 점유 5분)',
+                },
+              ],
+            },
+            {
+              content: '[운영 자동화 및 검증]',
+              descriptions: [
+                {
+                  content:
+                    'Docker Compose로 MySQL, Redis, RabbitMQ, Spring Boot 등 모든 서비스 일괄 관리 및 환경별 배포 자동화',
+                },
+                {
+                  content:
+                    'Swagger(OpenAPI 3) 기반 API 문서 자동화 및 WebSocket 테스트 페이지 제공',
+                },
+                {
+                  content:
+                    '실제 동시성 테스트 스크립트로 수천 명 동시 좌석 점유 시나리오에서 중복 예약/충돌 0건 달성',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+
+    // {
+    //   title: '실시간 대기열 기반 콘서트 예매 시스템',
+    //   startedAt: '2025-06',
+    //   endedAt: '2025-07',
+    //   where: '개인 프로젝트',
+    //   descriptions: [
+    //     {
+    //       content: '대용량 트래픽 환경에서 공정하고 실시간성 높은 콘서트 예매를 지원하는 백엔드 시스템을 설계 및 구현',
+    //       contribution: '백엔드 100% 기여',
+    //       descriptions: [
+    //         {
+    //           content: '[대기열/좌석 실시간 처리 아키텍처]',
+    //           descriptions: [
+    //             { content: 'Redis ZSet과 RabbitMQ를 활용한 대기열 시스템으로 수천~수만 동시 접속자도 공정하게 순번 관리' },
+    //             { content: 'WebSocket + Redis Pub/Sub으로 좌석 점유/해제, 상태 동기화 등 실시간 브로드캐스트 구현' },
+    //             { content: '좌석 등급, 좌표 기반 좌석 관리와 대기열 상태별(Waiting/Ready/Entered) 예매 흐름 설계' },
+    //             { content: 'JWT 기반 사용자 인증 및 권한 분리, 관리자/사용자 API 접근 제어' }
+    //           ]
+    //         },
+    //         {
+    //           content: '[대용량 트래픽 대응 및 운영 자동화]',
+    //           descriptions: [
+    //             { content: 'Docker Compose로 MySQL, Redis, RabbitMQ, Spring Boot 등 모든 서비스 일괄 관리' },
+    //             { content: '대기열 입장, 상태 조회, 예매 토큰 발급 등 주요 API의 트랜잭션/동시성 제어 최적화' },
+    //             { content: 'Swagger(OpenAPI 3) 기반 API 문서 자동화 및 WebSocket 테스트 페이지 제공' }
+    //           ]
+    //         },
+    //         {
+    //           content: '[주요 성과]',
+    //           descriptions: [
+    //             { content: '실제 대기열/좌석 동시성 테스트 스크립트로 수천 명 동시 입장, 좌석 점유 충돌 방지 검증' },
+    //             { content: '실시간 좌석 상태, 대기열 순번, 예매 가능 여부 등 사용자 경험 극대화' }
+    //           ]
+    //         }
+    //       ]
+    //     },
+    //   ],
+    // },
+    {
       title: 'AI 이미지 기반 냉장고 재료 관리 및 레시피 공유 서비스',
       startedAt: '2025-03',
       endedAt: '2025-06',
