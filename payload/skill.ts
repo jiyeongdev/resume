@@ -177,13 +177,7 @@ const toolsCollaboration: ISkill.Skill = {
       title: 'Medis',
     },
     {
-      title: 'DataGrip',
-    },
-    {
       title: 'VS Code',
-    },
-    {
-      title: 'Vim',
     },
     {
       title: 'Git',
@@ -192,10 +186,7 @@ const toolsCollaboration: ISkill.Skill = {
       title: 'Bitbucket',
     },
     {
-      title: 'Jira',
-    },
-    {
-      title: 'Confluence',
+      title: 'Jira/Confluence',
     },
   ],
 };
@@ -206,7 +197,6 @@ const devOps: ISkill.Skill = {
     { title: 'Linux Shell' },
     { title: 'Terraform (IaC 툴)' },
     { title: 'Bash Scripting (배포 자동화)' },
-    { title: 'Crontab' },
   ],
 };
 
