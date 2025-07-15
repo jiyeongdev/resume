@@ -1,4 +1,10 @@
-import { faEnvelope, faPen, faPhone, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelope,
+  faPen,
+  faPhone,
+  faFileAlt,
+  faPersonBooth,
+} from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import { faBell } from '@fortawesome/free-regular-svg-icons';
@@ -15,12 +21,17 @@ const profile: IProfile.Payload = {
   },
   contact: [
     {
+      title: '1996.05.02 (만 29세)',
+      icon: faPersonBooth,
+      badge: true,
+    },
+    {
       title: 'jiyeong.dev@gmail.com',
       link: 'mailto:jiyeong.dev@gmail.com',
       icon: faEnvelope,
     },
     {
-      title: 'Please contact me by email',
+      title: '010-5332-2273',
       icon: faPhone,
       badge: true,
     },
