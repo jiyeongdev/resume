@@ -16,9 +16,9 @@ const backendDevelopment: ISkill.Skill = {
     {
       title: 'PHP',
     },
-    {
-      title: 'javascript',
-    },
+    // {
+    // title: 'javascript',
+    // },
   ],
 };
 
@@ -40,9 +40,9 @@ const frameworks: ISkill.Skill = {
     {
       title: 'Node.js',
     },
-    {
-      title: 'Express.js',
-    },
+    // {
+    // title: 'Express.js',
+    // },
 
     {
       title: 'CodeIgniter',
@@ -87,7 +87,7 @@ const infrastructureCloud: ISkill.Skill = {
       title: 'AWS ECR/ECS',
     },
     {
-      title: 'AWS SQS',
+      title: 'AWS RabbitMQ',
     },
     {
       title: 'AWS OpenSearch',
@@ -95,15 +95,15 @@ const infrastructureCloud: ISkill.Skill = {
     {
       title: 'AWS Route53',
     },
-    {
-      title: 'Nginx',
-    },
+    // {
+    //   title: 'Nginx',
+    // },
     {
       title: 'OpenResty (Nginx + Lua)',
     },
-    {
-      title: 'Apache',
-    },
+    // {
+    // title: 'Apache',
+    // },
   ],
 };
 
@@ -116,15 +116,15 @@ const databaseCaching: ISkill.Skill = {
     {
       title: 'AuroraDB',
     },
-    {
-      title: 'MariaDB',
-    },
+    // {
+    //   title: 'MariaDB',
+    // },
     {
       title: 'Redis',
     },
-    {
-      title: 'MongoDB',
-    },
+    // {
+    // title: 'MongoDB',
+    // },
   ],
 };
 
@@ -176,15 +176,15 @@ const toolsCollaboration: ISkill.Skill = {
     {
       title: 'Medis',
     },
+    // {
+    // title: 'VS Code',
+    // },
     {
-      title: 'VS Code',
+      title: 'Git/Bitbucket',
     },
-    {
-      title: 'Git',
-    },
-    {
-      title: 'Bitbucket',
-    },
+    // {
+    //   title: 'Bitbucket',
+    // },
     {
       title: 'Jira/Confluence',
     },
@@ -194,7 +194,7 @@ const toolsCollaboration: ISkill.Skill = {
 const devOps: ISkill.Skill = {
   category: 'DevOps',
   items: [
-    { title: 'Linux Shell' },
+    // { title: 'Linux Shell' },
     { title: 'Terraform (IaC 툴)' },
     { title: 'Bash Scripting (배포 자동화)' },
   ],

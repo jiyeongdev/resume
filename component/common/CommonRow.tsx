@@ -55,12 +55,12 @@ export function CommonRows({
                   }}
                   title="포트폴리오 상세 보기"
                 >
-                  <img
+                  {/* <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg"
                     alt="Notion Link"
                     style={{ width: '18px', height: '18px' }}
-                  />
-                  <span style={{ fontSize: '14px', color: '#666' }}>상세보기</span>
+                  /> */}
+                  <span style={{ fontSize: '14px', color: '#666' }}>🔗 상세 보기</span>
                 </a>
               ) : (
                 ''

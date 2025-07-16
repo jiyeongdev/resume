@@ -114,8 +114,8 @@ const project: IProject.Payload = {
       descriptions: [
         {
           content: '냉장고 재료 관리 및 레시피 공유 서비스',
-          href: 'https://www.fridgepal.life',
-          contribution: '백엔드 100% 기여',
+          // href: 'https://www.fridgepal.life',
+          contribution: '백엔드/인프라 100% 기여',
           descriptions: [
             {
               content: '[백엔드 개발]',
@@ -177,8 +177,7 @@ const project: IProject.Payload = {
                 //   content: 'API 서버 인프라를 E2E로 직접 설계·구축 및 운영',
                 // },
                 {
-                  content: '서비스 전체 구조도',
-                  contribution: '100% 인프라 구축',
+                  content: '🔗 서비스 전체 구조도',
                   href:
                     'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/fridgePal_Diagram.png',
                 },
@@ -188,6 +187,7 @@ const project: IProject.Payload = {
         },
       ],
     },
+
     {
       title: '파일/폴더의 권한체크 로직 전면 개선',
       contribution: '100% 기여',
@@ -197,22 +197,45 @@ const project: IProject.Payload = {
       notionLink: 'https://jiyeongs-workspace.notion.site/209d4268cb5581eead1dcf118038f7d2',
       descriptions: [
         {
-          content: '권한 체크 로직 개선 - 처리 시간 98% 단축 (평균 1분~ 최대 5분 대 → 1초 대)',
+          content: '성과',
+          descriptions: [
+            { content: 'DB 호출 횟수 최대 2만 회 → 4회(99.98% 감소)' },
+            { content: '응답 시간 평균 1분~최대 5분 → 1초 대(98% 단축)' },
+            { content: '서버 리소스 사용량 75% 절감' },
+            { content: 'TDD 기반 자동화로 2만건 데이터 검증 및 성능 측정' },
+          ],
         },
         {
-          content:
-            '캐시 도입을 통한 DB 호출 최적화 - 최대 20,000회 → 최대 4회로 99.98% 감소 및 서버 리소스 사용량 75% 감소',
+          content: '문제 원인: ',
+          descriptions: [
+            { content: '① 각 디렉토리/파일 권한을 순차적으로 확인하는 구조' },
+            { content: '② 동일 경로에 대한 중복 권한 조회' },
+            { content: '③ 반복적인 DB 접근으로 인한 전체 응답 속도 저하' },
+          ],
         },
         {
-          content:
-            'TDD 회귀 테스트 자동화 구축 - 20,000건의 데이터에 대해 기존/개선 로직 간 권한 체크 결과값 검증 및 성능 측정 자동화',
+          content: '개선 방안: ',
+          descriptions: [
+            {
+              content:
+                '① 권한 데이터 구조 간 연관성 분석을 통해 실질적 권한 체크가 필요한 경로만 선별',
+            },
+            { content: '② 권한 데이터를 사전 조회해 글로벌 Key-Value 캐시로 보관' },
+            { content: '③ 이후 권한 확인 시 캐시 활용으로 DB 호출 최소화' },
+            {
+              content:
+                '④ Testify를 활용한 TDD 자동화 테스트로 기존/개선 로직의 결과값 및 성능을 자동으로 검증',
+            },
+          ],
         },
-
         {
-          content: '최적화 전후 시퀀스 다이어그램',
-          href:
-            'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/DCL_authority.png',
+          content: '🔗 권한 체크 성능 개선 일지: 2만 번의 DB 호출을 4번으로 줄이기까지',
+          href: 'https://jiyeongs-workspace.notion.site/209d4268cb5581eead1dcf118038f7d2',
         },
+        // {
+        //   content: '최적화 전후 시퀀스 다이어그램',
+        //   href: 'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/DCL_authority.png',
+        // },
       ],
     },
 
@@ -225,7 +248,7 @@ const project: IProject.Payload = {
       descriptions: [
         {
           content: '이용권과 좌석배치도 SaaS 구조 설계 및 개선 담당',
-          contribution: 'frontend 100% ,backend 100% 기여',
+          contribution: 'frontend/backend/인프라 100% 기여',
         },
         {
           content:
@@ -236,8 +259,7 @@ const project: IProject.Payload = {
             'WebSocket 폴링 방식의 서버 부하 문제를 Redis Pub/Sub 이벤트 기반 아키텍처로 전환하여 실시간성 개선',
         },
         {
-          content: '실시간 좌석상태 동기화 구성도',
-          contribution: '100% 인프라 구축',
+          content: '🔗 실시간 좌석상태 동기화 구성도',
           href:
             'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/ing_redis-pub-sub.png',
         },
@@ -260,7 +282,7 @@ const project: IProject.Payload = {
           content: 'Redash Query를 활용하여 데이터 시각화하고 타부서와 공유',
         },
         {
-          content: '광고 송출 자동화 구조도',
+          content: '🔗 광고 송출 자동화 구조도',
           href:
             'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/ing_advertise.png',
         },
@@ -304,8 +326,7 @@ const project: IProject.Payload = {
               ],
             },
             {
-              content: '단축URL 시스템 구성도',
-              contribution: '100% 인프라 구축',
+              content: '🔗 단축URL 시스템 구성도',
               href:
                 'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/ing_shortenURL.png',
             },
@@ -350,7 +371,6 @@ const project: IProject.Payload = {
       descriptions: [
         {
           content: 'WAS 구조의 인프라 구축 및 운영',
-          contribution: '100% 기여',
           descriptions: [
             {
               content: 'OpenResty와 Lua를 활용한 고성능 웹서버 구축 및 Redis 연동',
@@ -382,8 +402,7 @@ const project: IProject.Payload = {
           content: '롤백 스크립트 작성 및 배포 이력 관리',
         },
         {
-          content: 'CI/CD 구성도',
-          contribution: '100% 인프라 구축',
+          content: '🔗 CI/CD 구성도',
           href:
             'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/ing_jenkins_CICD.png',
         },
@@ -397,7 +416,6 @@ const project: IProject.Payload = {
       descriptions: [
         {
           content: '타 부서 요청 데이터 및 개발에 필요한 통계 데이터 추출',
-          contribution: '100% 기여',
           descriptions: [
             {
               content: 'SQL 기반 월별 지점별 승인결제내역 등 데이터 분석',
@@ -424,7 +442,6 @@ const project: IProject.Payload = {
         {
           content:
             '전국 150여개의 매장에서 운영 중인 M&A 스터디카페 키오스크 서비스와 관리자 페이지',
-          contribution: '100% 기여',
           descriptions: [
             {
               content: 'DNS 이전 작업 경험',
@@ -455,7 +472,7 @@ const project: IProject.Payload = {
             },
             {
               content: '아이디어 및 기획, 앱 배포까지 진행한 경험',
-              contribution: '인프라 설계 및 구축, 백엔드 개발 80% 기여',
+              // contribution: '인프라 설계 및 구축, 백엔드 개발 80% 기여',
             },
           ],
         },
@@ -469,14 +486,12 @@ const project: IProject.Payload = {
               content: 'Load Balancer, Auto Scaling 구축하여 트래픽 분산 및 서버 자동 확장',
             },
             {
-              content: '서비스 전체 구조도',
-              contribution: '100% 인프라 구축',
+              content: '🔗 서비스 전체 구조도',
               href:
                 'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/alarm_Diagrm.png',
             },
             {
-              content: '백엔드 데이터 수집 주요 로직',
-              contribution: '100% 인프라 구축',
+              content: '🔗 백엔드 데이터 수집 주요 로직',
               href:
                 'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/alarm_backend_diagram.png',
             },
