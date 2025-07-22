@@ -1,5 +1,6 @@
 import profile from './profile';
-import introduce from './introduce';
+import introduce from './introduce/introduce';
+import introduce2 from './introduce/introduce2';
 import skill from './skill';
 import experience from './experience';
 import openSource from './openSource';
@@ -28,6 +29,7 @@ import { IArticle } from '../component/article/IArticle';
 const Payload: Payload = {
   profile,
   introduce,
+  introduce2,
   skill,
   openSource,
   experience,
@@ -44,6 +46,7 @@ const Payload: Payload = {
 interface Payload {
   profile: IProfile.Payload;
   introduce: IIntroduce.Payload;
+  introduce2: IIntroduce.Payload;
   skill: ISkill.Payload;
   openSource: IOpenSource.Payload;
   experience: IExperience.Payload;

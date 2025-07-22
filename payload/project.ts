@@ -64,6 +64,12 @@ const project: IProject.Payload = {
             },
           ],
         },
+        {
+          content:
+            '🔗 실시간 예매 처리를 위한 Spring Boot 기반 아키텍처 (Redis, RabbitMQ, WebSocket 연동)',
+          href:
+            'https://my-profile-datas.s3.ap-northeast-3.amazonaws.com/profile/concert_booking_diagram.png',
+        },
       ],
     },
 
