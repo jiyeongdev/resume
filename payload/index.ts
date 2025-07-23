@@ -10,7 +10,7 @@ import education from './education';
 import article from './article';
 import etc from './etc';
 import footer from './footer';
-
+import troubleshooting from './troubleshooting';
 import { _global } from './_global';
 
 import { IProfile } from '../component/profile/IProfile';
@@ -25,6 +25,7 @@ import { IEtc } from '../component/etc/IEtc';
 import { IFooter } from '../component/footer/IFooter';
 import { IGlobal } from '../component/common/IGlobal';
 import { IArticle } from '../component/article/IArticle';
+import { ITroubleshooting } from '../component/troubleshooting/ITroubleshooting';
 
 const Payload: Payload = {
   profile,
@@ -39,7 +40,7 @@ const Payload: Payload = {
   education,
   etc,
   footer,
-
+  troubleshooting,
   _global,
 };
 
@@ -54,9 +55,9 @@ interface Payload {
   presentation: IPresentation.Payload;
   education: IEducation.Payload;
   article: IArticle.Payload;
+  troubleshooting: ITroubleshooting.Payload;
   etc: IEtc.Payload;
   footer: IFooter.Payload;
-
   _global: IGlobal.Payload;
 }
 

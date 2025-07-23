@@ -10,7 +10,8 @@ type TStyleKey =
   | 'footerCover'
   | 'footer'
   | 'skillKeywordBadge'
-  | 'highlightBadge';
+  | 'highlightBadge'
+  | 'lineUnderline';
 
 export const Style: Record<TStyleKey, CSSProperties> = {
   blue: {
@@ -59,5 +60,12 @@ export const Style: Record<TStyleKey, CSSProperties> = {
     backgroundColor: '#4a90e2',
     color: 'white',
     fontSize: '0.9em',
+  },
+
+  lineUnderline: {
+    textDecoration: 'underline',
+    textUnderlinePosition: 'under',
+    fontWeight: 500,
+    fontSize: '1em',
   },
 };

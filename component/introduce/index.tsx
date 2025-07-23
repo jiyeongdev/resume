@@ -1,4 +1,4 @@
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Badge } from 'reactstrap';
 import { PropsWithChildren } from 'react';
 // import { DateTime } from 'luxon';
 import { Style } from '../common/Style';
@@ -34,7 +34,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
         </Col>
         <Col sm={12} md={9}>
           {payload.contents.map((content, index) => (
-            <p key={index.toString()}>{content}</p>
+            <p key={index.toString()}>{formatDescription(content)}</p>
           ))}
           {/* <p className="text-right">
             <small>Latest Updated</small>{' '}
@@ -51,4 +51,32 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
       </Row>
     </div>
   );
+}
+
+function formatDescription(description: string) {
+  const parts = description.split(/(\*\*.*?\*\*|--.*?--)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      const text = part.slice(2, -2);
+      return (
+        <Badge
+          style={Style.highlightBadge}
+          key={index.toString()}
+          color="secondary"
+          className="mr-1"
+        >
+          {text}
+        </Badge>
+      );
+    }
+    if (part.startsWith('--') && part.endsWith('--')) {
+      const text = part.slice(2, -2);
+      return (
+        <span style={Style.lineUnderline} key={index.toString()} className="mr-1">
+          {text}
+        </span>
+      );
+    }
+    return part;
+  });
 }
